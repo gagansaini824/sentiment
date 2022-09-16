@@ -4,8 +4,8 @@ import numpy as np
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
     
-tokenizer = AutoTokenizer.from_pretrained("C:\\Users\\Gagandeep Singh\\Documents\\amazon-review-sentiment-analysis\\")
-model = AutoModelForSequenceClassification.from_pretrained("C:\\Users\\Gagandeep Singh\\Documents\\amazon-review-sentiment-analysis\\")
+#tokenizer = AutoTokenizer.from_pretrained("C:\\Users\\Gagandeep Singh\\Documents\\amazon-review-sentiment-analysis\\")
+#model = AutoModelForSequenceClassification.from_pretrained("C:\\Users\\Gagandeep Singh\\Documents\\amazon-review-sentiment-analysis\\")
 
 # title and description
 st.header("""
