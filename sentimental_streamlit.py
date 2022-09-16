@@ -19,22 +19,22 @@ def main():
     query = st.text_input("Find Sentiment!", "")
     st.text("")
 
-    st.write(f"{query}")
+#    st.write(f"{query}")
 
 
-    if query != "":
-        # encode the query as sentence vector
+ #   if query != "":
+  #      # encode the query as sentence vector
 
-        tokenized_text = tokenizer(query, return_tensors='pt')
-        output = model(**tokenized_text)
+   #     tokenized_text = tokenizer(query, return_tensors='pt')
+    #    output = model(**tokenized_text)
 
 
-        outputs = output.logits.softmax(dim=-1).tolist()[0]
-        outputs = np.argmax(outputs)+1
-        outputs = "*"*outputs 
+     #   outputs = output.logits.softmax(dim=-1).tolist()[0]
+      #  outputs = np.argmax(outputs)+1
+       # outputs = "*"*outputs 
 
         st.text("")
-        st.write("Sentiment score: "," ",f"{outputs}")
+        #st.write("Sentiment score: "," ",f"{outputs}")
 
     if __name__=='__main__':
     main()
